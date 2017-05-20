@@ -12,7 +12,7 @@ $ touch .env
 If you are using ec2, edit `.env` file:
 ```js
 HOST=ec2.subdomain.amazonaws.com
-PORT=1234
+PORT=8080
 ```
 
 Start dev server with hot loading
@@ -21,7 +21,7 @@ $ npm start
 ```
 
 Open in your browser:
-```js
+```sh
 # if dev on your local machine
 http://localhost:8080
 # if using amazon ec2
