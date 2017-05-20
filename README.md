@@ -1,7 +1,35 @@
 # REACT
 
+## 1) Use create-react-app
+Install create-react-app
+```sh
+$ npm -g create-react-app
+$ create-react-app my-new-app 
+$ cd my-new-app
+$ touch .env
+```
 
-### Bootstrap
+If you are using ec2, edit `.env` file:
+```js
+HOST=ec2.subdomain.amazonaws.com
+PORT=1234
+```
+
+Start dev server with hot loading
+```
+$ npm start
+```
+
+Open in your browser:
+```js
+# if dev on your local machine
+http://localhost:8080
+# if using amazon ec2
+http://ec2.subdomain.aws.com:8080
+```
+
+
+## 2) Manually create app
 1. create `/index.html`
 2. create `/package.json`
 3. create `/webpack.config.js`
@@ -9,7 +37,7 @@
 4. start coding app in `/source/app.js`
 
 
-# index.html
+### index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +52,7 @@
 </html>
 ```
 
-# package.json
+### package.json
 ```js
 {
   "name": "your-app-name",
@@ -47,7 +75,7 @@
 }
 ```
 
-# webpack.config.js
+### webpack.config.js
 ```js
 module.exports = {
     entry: [
